@@ -1,0 +1,29 @@
+<body>
+<div class="container">
+    <br>
+    <div class="header">Book Bed</div>
+      <br>
+  <div class="form-container">
+      <form [formGroup]="bookingForm">
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control mt-3" formControlName="name">
+          </div>
+          <div class="form-group mt-2">
+              <label for="contact">Contact</label>
+              <input type="text" id="contact" class="form-control mt-3" formControlName="contact">
+          </div>
+          <div class="form-group mt-2">
+              <label for="beds">Beds</label>
+              <input type="text" id="beds" class="form-control mt-3" formControlName="beds">
+          </div>
+          <div class="form-check mt-2">
+              <input type="checkbox" id="ac" class="form-check-input mt-3" formControlName="ac">
+              <label for="ac" class="form-check-label">AC</label>
+          </div>
+          <br>
+          <button class="btn btn-primary" (click)="bookBed()">Book Bed</button>
+      </form>
+  </div>
+</div>
+</body>

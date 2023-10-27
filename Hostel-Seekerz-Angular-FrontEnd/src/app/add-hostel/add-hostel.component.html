@@ -1,0 +1,28 @@
+<body>
+<div class="container">
+  <div class="header mt-3">Add Hostel</div>
+    <br>
+  <div class="form-container">
+    <form [formGroup]="hostelForm" (ngSubmit)="addHostel()">
+      <div class="form-group">
+        <label for="place">Place</label>
+        <input type="text" id="place" class="form-control mt-3" formControlName="place">
+      </div>
+      <div class="form-group">
+        <label for="sharing">Sharing</label>
+        <input type="text" id="sharing" class="form-control mt-3" formControlName="sharing">
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" class="form-control mt-3" formControlName="amount">
+      </div>
+      <div class="form-group">
+        <label for="hostelName">Hostel Name</label>
+        <input type="text" id="hostelName" class="form-control mt-3" formControlName="hostelName">
+      </div>
+      <br>
+      <button class="btn btn-primary" type="submit">Add Hostel</button>
+    </form>
+  </div>
+</div>
+</body>
